@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,34 @@
     <title>Validador de cpf</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1></h1>
+        <div>
+            <h1>Validador de CPF</h1>
+            <p>
+                Nesse algoritmo simples iremos desenvoler um validador de CPF,
+                com os recursos e habilidades em JavaScript.
+            </p>
+        </div>
     </header>
-    
+    <main>
+        <div>
+            <form action="">
+                <input type="text"name="cpf" style="color: #000;" \
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+                title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+                <!-- https://gist.github.com/marcoscastro/7887900ceebe9e223dce -->
+            </form>
+        </div>
+        <div>
+            Digite apenas números
+        </div>
+        <div>
+            <button>Validar</button>
+        </div>
+    </main>
+
 </body>
+
 </html>

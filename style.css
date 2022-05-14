@@ -63,3 +63,11 @@ main div button:hover{
     background-color: #696969;
     color: #fff;
 }
+
+.success {
+    display: block !important;
+}
+
+.error {
+    display: block !important;
+}

@@ -4,11 +4,11 @@
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff;
 }
 
 body {
     background-color: #2e2e2e;
+    color: #fff;
 }
 
 header {
@@ -38,9 +38,19 @@ main div {
 
 main div form {
     margin-top: 25px;
+    border: 1px solid #fff;
+    border-radius: 3%;
+    width: 290px;
+}
+
+main div form label{
+    padding: 2px 5px;
+    font-size: 13px;
+    background-color: #696969;
 }
 
 main div form input{
+    margin-left: -5px;
     width: 250px;
 }
 

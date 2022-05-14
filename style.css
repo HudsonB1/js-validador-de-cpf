@@ -12,22 +12,44 @@ body {
 }
 
 header {
-    padding: 0 140px;
-    background: rgb(105, 105, 105) !important;
-}
-
-main {
-    padding: 0 140px;
+    padding: 0 10%;
+    background-color: #696969;
 }
 
 header div{
     width: 100%;
     height: 100%;
     padding: 100px 0 25px 0;
-    color: #ff8bd9;
+    /* color: #ff8bd9; */
 }
 
 header div p {
     color: currentColor;
     margin-top: 60px;
+}
+
+main {
+    padding: 0 10%;
+}
+
+main div {
+    margin: 5px 0px;
+}
+
+main div form {
+    margin-top: 25px;
+}
+
+main div form input{
+    width: 250px;
+}
+
+main div button{
+    color: #000;
+    width: 70px;
+    cursor: pointer;
+}
+main div button:hover{
+    background-color: #696969;
+    color: #fff;
 }

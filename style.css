@@ -66,8 +66,18 @@ main div button:hover{
 
 .success {
     display: block !important;
+    color: #1B7030;
+    background-color: #BFFFC1;
+    border: 1px solid #1B7030;
+    border-radius: 2px;
+    padding: 5px 2px;
 }
 
 .error {
     display: block !important;
+    color: #CF040E;
+    background-color: #FFC5C2;
+    border: 1px solid #CF040E;
+    border-radius: 2px;
+    padding: 5px 2px;
 }

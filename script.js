@@ -2,30 +2,41 @@
 
 function validaCpf(cpf) {
     if (cpf.length == 11) {
-        let numeros = cpf.substring(0, 9);
-        let digitos = cpf.substring(9);
-        let soma = 0;
-        for (var i = 10; i > 1; i--) {
-            soma += numeros.charAt(10 - i) * i;
-        }
-        if (11 - (soma % 11) == digitos.charAt(0)) {
-            let numeros2 = cpf.substring(0, 10);
-            let soma2 = 0;
-            for (var i = 11; i > 1; i--) {
-                soma2 += numeros2.charAt(11 - i) * i;
-            }
-            if (11 - (soma2 % 11) == digitos.charAt(0)){
-                return true;
-            } else {
-                return false;
-            }
+        if (validaDigito1(cpf) == cpf[cpf.length - 2] &&
+            validaDigito2(cpf) == cpf[cpf.length - 1]) {
+            return true;
         } else {
-            return false;
+            return false
         }
     } else {
         return false;
     }
 }
+
+function validaDigito1(cpf) {
+    let numeros = cpf.substring(0, 9);
+    let digitos = cpf.substring(9);
+    let soma = 0;
+
+    for (var i = 10; i > 1; i--) {
+        soma += numeros.charAt(10 - i) * i;
+    }
+
+    return (11 - (soma % 11)) < 10 ? (11 - (soma % 11)) : 0;
+}
+
+function validaDigito2(cpf) {
+    let numeros = cpf.substring(0, 10);
+    let digitos = cpf.substring(9);
+    let soma = 0;
+
+    for (var i = 11; i > 1; i--) {
+        soma += numeros.charAt(11 - i) * i;
+    }
+
+    return (11 - (soma % 11)) < 10 ? (11 - (soma % 11)) : 0;
+}
+
 
 function reset() {
     let CPFerror = document.getElementById('error');
